@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 1em sans-serif;
+    background: #f9f9f9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+canvas{
+    background: green;
+    margin-top: 1rem;
+    background-image: url('./img/doodlejumpbg.png');
+    border: 2px solid rgb(36, 33, 33);
+}
+.container .buttons{
+    margin: 1rem;
+    margin-left: 2rem;
+    display: none;
+}
+.container .buttons button{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #6f6f6f;
+    cursor: pointer;
+}
+@media (max-width:599px){
+    .container .buttons{
+        display: block;
+    }
+}
